@@ -119,3 +119,24 @@ footer {
   background: #f4f4f4;
   margin-top: 40px;
 }
+
+/* Bullet point cards for case studies */
+ul.styled-list {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+ul.styled-list li {
+  background: #ffffff;          /* white background */
+  border-left: 4px solid #2563eb; /* blue accent bar */
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ul.styled-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
