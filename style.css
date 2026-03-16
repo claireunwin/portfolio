@@ -120,3 +120,22 @@ padding: 40px;
 background: #f0f0f0;
 
 }
+
+.button {
+
+display: inline-block;
+margin-top: 15px;
+padding: 10px 16px;
+background: #2563eb;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 14px;
+
+}
+
+.button:hover {
+
+background: #1e4fd6;
+
+}
