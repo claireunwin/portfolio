@@ -63,9 +63,13 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: #F4FBFB; /* very soft teal tint */
+  background: #FFFFFF;
   padding: 60px 20px;
   text-align: center;
+}
+
+.hero-section h1 {
+  color: #0F6F73; /* Dark teal */
 }
 
 .tagline {
@@ -74,9 +78,8 @@ body {
 
 /* Stats */
 .hero-stats strong {
-  color: #0F6F73; /* darker teal for emphasis */
+  color: #1AA3A8;
 }
-
 /* Grid Cards */
 .grid {
   display: flex;
