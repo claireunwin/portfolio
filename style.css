@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+:root {
+  --soft-teal-bg: #F4FBFB;
+}
+
 /* Headings */
 h1, h2, h3 {
   color: #1AA3A8; /* Primary Teal */
@@ -135,7 +139,7 @@ footer {
   margin-top: 60px;
   padding: 20px;
   text-align: center;
-  background: #F4FBFB;
+  background: var(--soft-teal-bg);
   font-size: 0.9rem;
 }
 
@@ -298,7 +302,7 @@ ul.styled-list li:hover {
 
 /* HERO */
 .hero-section {
-  background: #f8fafc;
+  background: var(--soft-teal-bg);
   padding: 60px 20px;
   text-align: center;
 }
