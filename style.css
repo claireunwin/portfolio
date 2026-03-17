@@ -178,3 +178,47 @@ ul.styled-list li:hover {
 .back-link:hover {
   text-decoration: underline;
 }
+
+/* Case study grid */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Card styling */
+.case-card {
+  display: block;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #111;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+  border: 1px solid #eee;
+}
+
+/* Hover = THIS is what makes it feel clickable */
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* Titles */
+.case-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Description */
+.case-card p {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* CTA text */
+.case-card .cta {
+  font-weight: bold;
+  color: #2563eb;
+}
