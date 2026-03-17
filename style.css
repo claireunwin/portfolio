@@ -1,3 +1,27 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #555555; /* Charcoal */
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #1AA3A8; /* Primary Teal */
+}
+
+/* Links */
+a {
+  color: #1AA3A8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0F6F73; /* Dark Teal */
+}
+
 /* Reset and base */
 * {
   margin: 0;
@@ -14,52 +38,43 @@ body {
 
 /* Navigation */
 .nav-container {
+  background: #FFFFFF;
+  border-bottom: 1px solid #eee;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .nav-logo {
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1AA3A8;
+  font-size: 1.2rem;
 }
 
 .nav-links a {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.2s;
+  margin-left: 20px;
+  color: #555555;
 }
 
 .nav-links a:hover {
-  color: #2563eb;
+  color: #1AA3A8;
 }
 
 /* Hero Section */
 .hero-section {
-  background-color: #2563eb;
-  color: white;
+  background: #F4FBFB; /* very soft teal tint */
+  padding: 60px 20px;
   text-align: center;
-  padding: 80px 20px;
 }
 
-.hero-section h1 {
-  font-size: 2.8rem;
-  margin-bottom: 16px;
+.tagline {
+  color: #555555;
 }
 
-.hero-section p {
-  font-size: 1.1rem;
-  max-width: 680px;
-  margin: 0 auto;
-  opacity: 0.9;
+/* Stats */
+.hero-stats strong {
+  color: #0F6F73; /* darker teal for emphasis */
 }
 
 /* Grid Cards */
@@ -121,9 +136,12 @@ footer {
 }
 
 /* Bullet point cards for case studies */
-ul.styled-list {
-  list-style: none; /* remove default bullets */
-  padding-left: 0;
+ul.styled-list li {
+  border-left: 4px solid #1AA3A8;
+}
+
+ul.styled-list li:hover {
+  border-left: 4px solid #0F6F73;
 }
 
 /* Container for better readability */
@@ -189,21 +207,34 @@ ul.styled-list li:hover {
 
 /* Card styling */
 .case-card {
-  display: block;
-  background: #ffffff;
-  padding: 24px;
+  background: #FFFFFF;
   border-radius: 10px;
-  text-decoration: none;
-  color: #111;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
-  transition: all 0.25s ease;
+  padding: 24px;
   border: 1px solid #eee;
+  transition: all 0.25s ease;
 }
 
-/* Hover = THIS is what makes it feel clickable */
+/* Top accent colours */
+.case-card.blue,
+.case-card.purple,
+.case-card.green {
+  border-top: 4px solid #1AA3A8; /* unify */
+}
+
+/* Hover */
 .case-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+/* Icon */
+.case-card .icon {
+  color: #1AA3A8;
+}
+
+/* Result highlight */
+.case-card .result {
+  color: #0F6F73;
 }
 
 /* Titles */
@@ -300,26 +331,25 @@ ul.styled-list li:hover {
 }
 
 .btn-primary {
-  background: #2563eb;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.btn-secondary {
-  border: 1px solid #2563eb;
-  color: #2563eb;
+  background: #1AA3A8;
+  color: #FFFFFF;
   padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
 }
 
 .btn-primary:hover {
-  background: #1e4ed8;
+  background: #0F6F73;
+}
+
+.btn-secondary {
+  border: 1px solid #1AA3A8;
+  color: #1AA3A8;
+  padding: 12px 20px;
+  border-radius: 6px;
 }
 
 .btn-secondary:hover {
-  background: #2563eb;
-  color: white;
+  background: #1AA3A8;
+  color: #FFFFFF;
 }
