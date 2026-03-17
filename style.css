@@ -217,6 +217,10 @@ ul.styled-list li:hover {
   transition: all 0.25s ease;
 }
 
+.case-card.featured {
+  border: 2px solid #1AA3A8;
+  transform: scale(1.02);
+}
 /* Top accent colours */
 .case-card.blue,
 .case-card.purple,
@@ -355,4 +359,10 @@ ul.styled-list li:hover {
 .btn-secondary:hover {
   background: #1AA3A8;
   color: #FFFFFF;
+}
+
+.sub-proof {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #666;
 }
