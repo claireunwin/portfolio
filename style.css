@@ -108,7 +108,7 @@ section {
 }
 
 h2 {
-  margin-bottom: 24px;
+  margin-bottom: 60px;
   font-size: 2rem;
   text-align: center;
 }
@@ -132,10 +132,11 @@ h2 {
 
 /* Footer */
 footer {
+  margin-top: 60px;
+  padding: 20px;
   text-align: center;
-  padding: 32px;
-  background: #f4f4f4;
-  margin-top: 40px;
+  background: #F4FBFB;
+  font-size: 0.9rem;
 }
 
 /* Bullet point cards for case studies */
@@ -150,8 +151,8 @@ ul.styled-list li:hover {
 /* Container for better readability */
 .container {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: auto;
+  padding: 30px 20px;
 }
 
 /* Section spacing */
@@ -365,4 +366,12 @@ ul.styled-list li:hover {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #666;
+}
+
+.highlight-box {
+  background: #F4FBFB;
+  border-left: 4px solid #1AA3A8;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 6px;
 }
