@@ -126,17 +126,55 @@ ul.styled-list {
   padding-left: 0;
 }
 
-ul.styled-list li {
-  background: #ffffff;          /* white background */
-  border-left: 4px solid #2563eb; /* blue accent bar */
-  padding: 16px 20px;
+/* Container for better readability */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 50px;
+}
+
+/* Headings */
+h2 {
   margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+
+/* Styled bullet lists */
+ul.styled-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.styled-list li {
+  background: #ffffff;
+  border-left: 4px solid #2563eb;
+  padding: 16px 20px;
+  margin-bottom: 14px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  line-height: 1.5;
+  transition: all 0.2s ease;
 }
 
 ul.styled-list li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
