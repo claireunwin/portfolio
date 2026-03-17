@@ -191,13 +191,14 @@ ul.styled-list li:hover {
 /* Back link */
 .back-link {
   display: inline-block;
-  margin-top: 20px;
-  font-weight: 500;
+  margin-top: 30px;
+  color: #1AA3A8;
   text-decoration: none;
-  color: #2563eb;
+  font-weight: 500;
 }
 
 .back-link:hover {
+  color: #0F6F73;
   text-decoration: underline;
 }
 
@@ -375,3 +376,22 @@ ul.styled-list li:hover {
   margin-bottom: 30px;
   border-radius: 6px;
 }
+
+.contact-section {
+  background: #F4FBFB;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.contact-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
